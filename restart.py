@@ -1,8 +1,8 @@
 import urllib
 import urllib2
-test_data = {'text':'WARRING','desp':'IP has been changed'}
+test_data = {'Authorization':'ns7i54n3iuln78dtot936b4sjknjaoxr93po8hsw'}
 test_data_urlencode = urllib.urlencode(test_data)
-requrl = "https://sc.ftqq.com/SCU10361T0a2416cf6a6ca09da852bf223a588c2f59776131cef7d.send"
+requrl = "https://openapi.daocloud.io/v1/apps/922fc621-dec5-45ce-beb1-5279d5b278d6/actions/restart"
 req = urllib2.Request(url = requrl,data =test_data_urlencode)
 print req
 res_data = urllib2.urlopen(req)
