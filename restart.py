@@ -1,3 +1,11 @@
+import requests
+
+result = requests.post('https://openapi.daocloud.io/v1/apps/28908fa3-d32e-4cc6-aecf-3ef906525b35/actions/restart',
+  headers={"Authorization": "ns7i54n3iuln78dtot936b4sjknjaoxr93po8hsw"})
+
+print(result.json())
+
+'''
 import urllib
 import httplib
 #test_data = {'ServiceCode':'aaaa','b':'bbbbb'}
@@ -9,8 +17,8 @@ conn.request(method="POST",headers = headerdata)
 response = conn.getresponse()
 res= response.read()
 print res
-
-
+'''
+#28908fa3-d32e-4cc6-aecf-3ef906525b35
 
 #  File "send2.py", line 3
 #SyntaxError: Non-ASCII character '\xe4' in file send2.py on line 3, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
