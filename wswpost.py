@@ -14,7 +14,7 @@ def send_offline():
     res = res_data.read()
     print res
 
-
+'''
 def send_ipchange():
     test_data = {'text':'WARRING','desp':'IP has been changed'}
     test_data_urlencode = urllib.urlencode(test_data)
@@ -32,7 +32,7 @@ def send_restart():
       headers={"Authorization": "ns7i54n3iuln78dtot936b4sjknjaoxr93po8hsw"})
     print(result.json())
 
-
+'''
 
 
 
